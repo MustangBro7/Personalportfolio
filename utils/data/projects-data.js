@@ -6,47 +6,45 @@ import travel from '/public/image/travel.jpg';
 export const projectsData = [
     {
         id: 1,
-        name: 'AI Powered Financial App',
-        description: "Me and my team built an AI-powered financial mobile application. I have developed API using Express, Typescript, OpenAI, AWS, and MongoDB. Used OTP via AWS SES, Google, and Facebook for the authentication system. Built AI assistants using OpenAI's latest model and trained using our dataset. Voice messages are converted to text using AWS Transcribe. The app fetches data from Google Sheets and generates a PDF term sheet, sent via AWS SES.",
-        tools: ['Express', 'MongoDB', 'OpenAI API', 'AWS SES', 'AWS S3', 'Node Mailer', 'Joi', 'Puppeteer', 'EC2', 'PM2', 'Nginx'],
-        role: 'Backend Developer',
+        name: 'DDoS Detection and Mitigation System',
+        description: 'Developed a DDoS detection and mitigation system using a machine learning model within the Ryu SDN Controller. Analyzed network traffic patterns to detect DDoS attacks, and utilized Mininet to simulate network topologies and attack scenarios. Implemented automated blocking of malicious traffic while ensuring legitimate traffic passes through.',
+        tools: ['Python', 'Ryu SDN Controller', 'Mininet', 'Machine Learning'],
+        role: 'Developer',
         code: '',
         demo: '',
-        image: crefin,
+        image: 'ddos_system_image', // Replace with actual image reference
     },
     {
         id: 2,
-        name: 'Travel Agency App',
-        description: 'I have designed and developed a full-stack web app for 2Expedition, a travel agency in Armenia. I created the UI using NextJS, Typescript, MUI, TailwindCSS, Google Maps, Sun-Editor, and React Slick. The app supports multiple languages and currencies. I developed the API using NestJS, Typescript, MySQL, TypeORM, AWS, and Nodemailer. I deployed the front-end app to AWS Amplify and the back-end app to AWS EC2.',
-        tools: ['NextJS', 'Tailwind CSS', "Google Maps", "NestJS", "TypeScript", "MySQL", "AWS S3", "Sun-Editor", "Gmail Passkey"],
-        role: 'Full Stack Developer',
+        name: 'Amazebot - Amazon Price Tracker',
+        description: 'Engineered an Amazon price tracker using React and Flask, automating price monitoring and enhancing user savings. Implemented a backend system using Selenium and BeautifulSoup to scrape product prices, running cron jobs twice daily.',
+        tools: ['React', 'Flask', 'Selenium', 'BeautifulSoup'],
+        role: 'Developer',
         code: '',
         demo: '',
-        image: travel,
+        image: 'amazebot_image', // Replace with actual image reference
     },
     {
         id: 3,
-        name: 'AI Powered Real Estate',
-        description: 'My team built an AI-based real estate app using Replicate API and OpenAI. We used Express, Typescript, OpenAI, Replicate, Stripe, and Mongoose to develop the API. We utilized NextJS, Formik, TailwindCSS, and other npm libraries for the UI. We have trained multiple AI assistants using the latest GPT model and integrated Replicate API for image processing. We added role-based auth, subscription plans, Cron job scheduling, and payment integration with Stripe.',
-        tools: ['React', 'Bootstrap', 'SCSS', 'Stripe', 'Express', 'TypeScript', 'MongoDB', 'Azure Blob', 'OpenAI API', 'Replicate AI', 'Cronjob', 'JWT'],
+        name: 'Jaundice Detection in Newborns',
+        description: 'Developed a deep learning model to accurately detect jaundice in newborns through image processing, achieving over 90% accuracy. Utilized a lightweight MobileNet model, matching the performance of traditional deep learning models while being resource-efficient.',
+        tools: ['Python', 'TensorFlow', 'MobileNet'],
+        role: 'Developer',
         code: '',
-        role: 'Full Stack Developer',
         demo: '',
-        image: realEstate,
+        image: 'jaundice_detection_image', // Replace with actual image reference
     },
     {
-        id: 4,
-        name: 'Newsroom Management',
-        description: "My team and I developed a newspaper management dashboard application called Newsroom Management. As a front-end developer, I worked on creating the dashboard using NextJS, Material UI, Redux, Calendar, and other necessary npm libraries. We used React Redux to manage the application's state and React-hook-form and Sun Editor to handle forms.",
-        tools: ['NextJS', 'Material UI', 'Redux', 'Sun Editor', "Calendar"],
+        id: 5,
+        name: 'File Combiner',
+        description: 'Developed a CLI tool in Go to seamlessly combine PDFs and PPTs, streamlining document management.',
+        tools: ['Go'],
+        role: 'Developer',
         code: '',
         demo: '',
-        image: ayla,
-        role: 'Full Stack Developer',
+        image: 'file_combiner_image', // Replace with actual image reference
     }
 ];
-
-
 // Do not remove any property.
 // Leave it blank instead as shown below
 

@@ -4,7 +4,7 @@ import { personalData } from "@/utils/data/personal-data";
 import Image from "next/image";
 import Link from "next/link";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { FaFacebook, FaTwitterSquare } from "react-icons/fa";
+import { FaFacebook, FaTwitterSquare, FaInstagram } from "react-icons/fa";
 import { MdDownload } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
 import { SiLeetcode } from "react-icons/si";
@@ -19,14 +19,15 @@ function HeroSection() {
         height={795}
         className="absolute -top-[98px] -z-10"
       />
-
+      
       <div className="grid grid-cols-1 items-start lg:grid-cols-2 lg:gap-12 gap-y-8">
         <div className="order-2 lg:order-1 flex flex-col items-start justify-center p-2 pb-20 md:pb-10 lg:pt-10">
+
           <h1 className="text-3xl font-bold leading-10 text-white md:font-extrabold lg:text-[2.6rem] lg:leading-[3.5rem]">
             Hello, <br />
             This is {' '}
             <span className=" text-pink-500">{personalData.name}</span>
-            {` , I'm a Professional `}
+            ,
             <span className=" text-[#16f2b3]">{personalData.designation}</span>
             .
           </h1>
@@ -35,35 +36,35 @@ function HeroSection() {
             <Link
               href={personalData.github}
               target='_blank'
-              className="transition-all text-pink-500 hover:scale-125 duration-300"
+              className="transition-all text-[#16f2b3] hover:scale-125 duration-300"
             >
               <BsGithub size={30} />
             </Link>
             <Link
               href={personalData.linkedIn}
               target='_blank'
-              className="transition-all text-pink-500 hover:scale-125 duration-300"
+              className="transition-all text-[#16f2b3] hover:scale-125 duration-300"
             >
               <BsLinkedin size={30} />
             </Link>
             <Link
-              href={personalData.facebook}
+              href={personalData.instagram}
               target='_blank'
-              className="transition-all text-pink-500 hover:scale-125 duration-300"
+              className="transition-all text-[#16f2b3] hover:scale-125 duration-300"
             >
-              <FaFacebook size={30} />
+              <FaInstagram size={30} />
             </Link>
             <Link
               href={personalData.leetcode}
               target='_blank'
-              className="transition-all text-pink-500 hover:scale-125 duration-300"
+              className="transition-all text-[#16f2b3] hover:scale-125 duration-300"
             >
               <SiLeetcode size={30} />
             </Link>
             <Link
               href={personalData.twitter}
               target='_blank'
-              className="transition-all text-pink-500 hover:scale-125 duration-300"
+              className="transition-all text-[#16f2b3] hover:scale-125 duration-300"
             >
               <FaTwitterSquare size={30} />
             </Link>
@@ -98,86 +99,79 @@ function HeroSection() {
             </div>
           </div>
           <div className="overflow-hidden border-t-[2px] border-indigo-900 px-4 lg:px-8 py-4 lg:py-8">
-            <code className="font-mono text-xs md:text-sm lg:text-base">
-              <div className="blink">
-                <span className="mr-2 text-pink-500">const</span>
-                <span className="mr-2 text-white">coder</span>
-                <span className="mr-2 text-pink-500">=</span>
-                <span className="text-gray-400">{'{'}</span>
-              </div>
-              <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">name:</span>
-                <span className="text-gray-400">{`'`}</span>
-                <span className="text-amber-300">Abu Said</span>
-                <span className="text-gray-400">{`',`}</span>
-              </div>
-              <div className="ml-4 lg:ml-8 mr-2">
-                <span className=" text-white">skills:</span>
-                <span className="text-gray-400">{`['`}</span>
-                <span className="text-amber-300">React</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">NextJS</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Redux</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Express</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">NestJS</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">MySql</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">MongoDB</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Docker</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">AWS</span>
-                <span className="text-gray-400">{"'],"}</span>
-              </div>
-              <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">hardWorker:</span>
-                <span className="text-orange-400">true</span>
-                <span className="text-gray-400">,</span>
-              </div>
-              <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">quickLearner:</span>
-                <span className="text-orange-400">true</span>
-                <span className="text-gray-400">,</span>
-              </div>
-              <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">problemSolver:</span>
-                <span className="text-orange-400">true</span>
-                <span className="text-gray-400">,</span>
-              </div>
-              <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-green-400">hireable:</span>
-                <span className="text-orange-400">function</span>
-                <span className="text-gray-400">{'() {'}</span>
-              </div>
-              <div>
-                <span className="ml-8 lg:ml-16 mr-2 text-orange-400">return</span>
-                <span className="text-gray-400">{`(`}</span>
-              </div>
-              <div>
-                <span className="ml-12 lg:ml-24 text-cyan-400">this.</span>
-                <span className="mr-2 text-white">hardWorker</span>
-                <span className="text-amber-300">&amp;&amp;</span>
-              </div>
-              <div>
-                <span className="ml-12 lg:ml-24 text-cyan-400">this.</span>
-                <span className="mr-2 text-white">problemSolver</span>
-                <span className="text-amber-300">&amp;&amp;</span>
-              </div>
-              <div>
-                <span className="ml-12 lg:ml-24 text-cyan-400">this.</span>
-                <span className="mr-2 text-white">skills.length</span>
-                <span className="mr-2 text-amber-300">&gt;=</span>
-                <span className="text-orange-400">5</span>
-              </div>
-              <div><span className="ml-8 lg:ml-16 mr-2 text-gray-400">{`);`}</span></div>
-              <div><span className="ml-4 lg:ml-8 text-gray-400">{`};`}</span></div>
-              <div><span className="text-gray-400">{`};`}</span></div>
-            </code>
-          </div>
+  <code className="font-mono text-xs md:text-sm lg:text-base">
+    <div className="blink">
+      <span className="mr-2 text-pink-500">const</span>
+      <span className="mr-2 text-white">About</span>
+      <span className="mr-2 text-pink-500">=</span>
+      <span className="text-gray-400">{'{'}</span>
+    </div>
+    <div>
+      <span className="ml-4 lg:ml-8 mr-2 text-white">name:</span>
+      <span className="text-gray-400">{`'`}</span>
+      <span className="text-amber-300">Abhinav Mohan</span>
+      <span className="text-gray-400">{`',`}</span>
+    </div>
+    <div className="ml-4 lg:ml-8 mr-2">
+      <span className=" text-white">skills:</span>
+      <span className="text-gray-400">{`['`}</span>
+      <span className="text-amber-300">Python</span>
+      <span className="text-gray-400">{"', '"}</span>
+      <span className="text-amber-300">JavaScript</span>
+      <span className="text-gray-400">{"', '"}</span>
+      <span className="text-amber-300">C/C++</span>
+      <span className="text-gray-400">{"', '"}</span>
+      <span className="text-amber-300">Java</span>
+      <span className="text-gray-400">{"', '"}</span>
+      <span className="text-amber-300">Go</span>
+      <span className="text-gray-400">{"', '"}</span>
+      <span className="text-amber-300">React</span>
+      <span className="text-gray-400">{"', '"}</span>
+      <span className="text-amber-300">NodeJS</span>
+      <span className="text-gray-400">{"', '"}</span>
+      <span className="text-amber-300">Flask</span>
+      <span className="text-gray-400">{"', '"}</span>
+      <span className="text-amber-300">Express</span>
+      <span className="text-gray-400">{"', '"}</span>
+      <span className="text-amber-300">MySQL</span>
+      <span className="text-gray-400">{"', '"}</span>
+      <span className="text-amber-300">MongoDB</span>
+      <span className="text-gray-400">{"', '"}</span>
+      <span className="text-amber-300">Docker</span>
+      <span className="text-gray-400">{"', '"}</span>
+      <span className="text-amber-300">AWS</span>
+      <span className="text-gray-400">{"'],"}</span>
+    </div>
+    <div className="ml-4 lg:ml-8 mr-2">
+      <span className=" text-white">College_clubs:</span>
+      <span className="text-gray-400">{`['`}</span>
+      <span className="text-amber-300">Google Developer Student Club</span>
+      <span className="text-gray-400">{"', '"}</span>
+      <span className="text-amber-300">Parallax PESU ECC</span>
+      <span className="text-gray-400">{"', '"}</span>
+      <span className="text-amber-300">The Entrepreneuership Club</span>
+      <span className="text-gray-400">{"', '"}</span>
+      <span className="text-amber-300">QQC</span>
+      
+      <span className="text-gray-400">{"'],"}</span>
+      
+    </div>
+    <div className="ml-4 lg:ml-8 mr-2">
+      <span className=" text-white">Sports:</span>
+      <span className="text-gray-400">{`['`}</span>
+      <span className="text-amber-300">Football</span>
+      <span className="text-gray-400">{"', '"}</span>
+      <span className="text-amber-300">Basketball</span>
+      
+      
+      <span className="text-gray-400">{"'],"}</span>
+      
+    </div>
+    <div><span className="text-gray-400">{`};`}</span></div>
+  </code>
+</div>
+
+          
         </div>
       </div>
     </section>
